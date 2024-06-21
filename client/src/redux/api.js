@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_MONGO_BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://todo-list-tgi0.onrender.com" }),
   reducerPath: "todo",
   tagTypes: ["Todo"],
   endpoints: (build) => ({
